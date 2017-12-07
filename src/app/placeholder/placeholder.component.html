@@ -1,0 +1,12 @@
+<span *ngIf="isEditMode === false; then place else edit">
+</span>
+
+<ng-template #place>
+    <span class="clickable" (click)="toggleView()">
+        {{placeHolderText}}
+    </span>
+</ng-template>
+
+<ng-template #edit>
+    <input type="text" value="{{ placeHolderText }}" #editValue (blur)="toggleView()"/>
+</ng-template>

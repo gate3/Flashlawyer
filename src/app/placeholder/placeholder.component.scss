@@ -1,0 +1,7 @@
+// component css goes here
+span{
+    &.clickable{
+        cursor: pointer;
+        border-bottom: dashed thin;
+    }
+}
